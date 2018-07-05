@@ -30,7 +30,7 @@ public class SimpleLdapSearch {
 			// 1. create connection
 			conn = new LdapNetworkConnection(host, port);
 
-			// 2. bind with authorized user (log-in to LDAP)
+			// 2. bind with authorized user (simple authentication)
 			conn.bind(user, pass);
 
 			// 3. perform search
